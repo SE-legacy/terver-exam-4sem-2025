@@ -190,6 +190,12 @@ $ limits(union.big.sq)_(i = 1)^infinity A_i = Omega; space P(A_i) > 0 space fora
 
 Пусть $A$ --- случайное событие для которого $P(A| A_i) gt.eq 0$. Тогда
 
+Так как $P(A_i) > 0$, $P(A) > 0$, то по теореме об умножении вероятностей, $P(A inter A_i) = P(A_i) dot P(A | A_i)$.
+
+$P(A inter A_i) = P(A) dot P(A_i | A)$.
+
+Следовательно, $P(A) dot P(A_i | A) = P(A_i) dot P(A | A_i), i = 1, 2, ...$
+
 $ P(A) = limits(sum)_(i = 1)^infinity P(A_i) dot P(A | A_i) $
 
 Доказательство:
