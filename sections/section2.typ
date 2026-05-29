@@ -393,7 +393,7 @@ P{xi = x_i; eta = y_j} = P{xi = x_i} dot P{eta = y_j} $
 
 Доказательство: _Необходимость:_ Пусть сл.в. $xi, eta$ независимы, т.е. $F_(xi eta) (x, y) = F_xi (x) dot F_eta (y)$. Тогда
 
-$ underbrace((diff^2 F_(xi eta) (x, y)) / (diff x diff y), f_(xi eta) (x, y)) = (diff^2) / (diff x diff y) F_xi (x) dot F_eta (y) = underbrace( (diff F_xi (x)) / (diff x), f_xi (x)) dot underbrace( (diff F_eta (y)) / (diff y), f_eta (y)) $
+$ underbrace((partial^2 F_(xi eta) (x, y)) / (partial x partial y), f_(xi eta) (x, y)) = (partial^2) / (partial x partial y) F_xi (x) dot F_eta (y) = underbrace( (partial F_xi (x)) / (partial x), f_xi (x)) dot underbrace( (partial F_eta (y)) / (partial y), f_eta (y)) $
 
 Таким образом $f_(xi eta) (x, y) = f_xi (x) dot f_eta (y)$
 
