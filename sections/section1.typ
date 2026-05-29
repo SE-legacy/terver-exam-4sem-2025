@@ -56,8 +56,8 @@ A3) Если ${A_i}_(i=1)^infinity in cal(F)$, то $limits(union.big)^infinity_
 1) $Q(Omega) = 1$ \
 2) $Q(A) >= 0 space forall A in cal(A)$ \
 3)  Если $A, B in cal(A) and A inter B = emptyset$, то $Q(A union B) = Q(A) + Q(B)$\
-  В случае, если речь идет только про несовместные события:\
-  $P(limits(union.sq.big)_(i = 1)^n A_i) = limits(sum)_(i = 1)^n P(A_i)$
+В случае, если речь идет только про несовместные события:\
+$Q(limits(union.sq.big)_(i = 1)^n A_i) = limits(sum)_(i = 1)^n Q(A_i)$
 
 *Счётно-аддитивной вероятностной мерой* над множеством $Omega$ называется функция множества $P: cal(F) -> [0, 1]$, такая что\
 P1) $P(Omega) = 1$\
