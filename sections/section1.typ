@@ -28,12 +28,12 @@
 == Определения: кольцо, алгебра, $sigma$-алгебра, минимальная $sigma$-алгебра над классом К, борелевская $sigma$-алгебра
 
 *Кольцом* над множеством $Omega$ называется класс подмножеств $Re$ такой, что:
-  + Если $A, B in Re => A union B in Re$
-  + Если $A, B in Re => A \\ B in Re$
++ Если $A, B in Re$, то $A union B in Re$
++ Если $A, B in Re$, то $A \\ B in Re$
 
 *Алгеброй* над множеством $Omega$ называется класс подмножеств $cal(A)$ такой, что
-  + Если $A in cal(A) => overline(A) in cal(A)$
-  + Если $A, B in cal(A) => A union B in cal(A)$
++ Если $A in cal(A)$, то $overline(A) in cal(A)$
++ Если $A, B in cal(A)$, то $A union B in cal(A)$
 
 *$sigma$-алгеброй событий* называется множество $cal(F)$ подмножеств $A subset Omega$, удовлетворяющее условиям:
 
@@ -44,7 +44,7 @@ A3) Если ${A_i}_(i=1)^infinity in cal(F)$, то $limits(union.big)^infinity_
 *Минимальной $sigma$-алгеброй* над классом $K$ называется $sigma(K)$, такая, что $K in sigma(K)$, а сама $sigma(K) subset cal(F) = sigma(Omega)$
 
 *Борелевская $sigma$-алгебра:*\
-Борелевская $sigma$-алгебра $cal(B)$ --- это множество всех возможных подмножеств на числовой прямой, которые представимы в виде конечного или счетного объединения интервалов/промежутков $cal(B)(RR) = {[a, b], space (a, b), space [a, b), space (a, b], space(- infinity, a), space (- infinity a], space (b, + infinity), space [b, +infinity)}$
+Борелевская $sigma$-алгебра $cal(B)$ --- это множество всех возможных подмножеств на числовой прямой, которые представимы в виде конечного или счетного объединения интервалов/промежутков $cal(B)(RR) = {[a, b], space (a, b), space [a, b), space (a, b], space(- infinity, a), space (- infinity, a], space (b, + infinity), space [b, +infinity)}$
 
 == Теорема Каратеодори (о продолжении вероятностной меры)
 
