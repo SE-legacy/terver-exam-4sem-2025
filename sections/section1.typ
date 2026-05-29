@@ -269,7 +269,7 @@ $arrow.double.bar.long$: Пусть $A$ и $B$ --- независимы. По о
 
 Тогда
 
-$ P(A|B) = P(A inter B )/P(B) = (P(A) dot P(B))/P(B) = P(B). $
+$ P(A|B) = P(A inter B )/P(B) = (P(A) dot P(B))/P(B) = P(A). $
 
 $arrow.double.bar.long.l$: Пусть $P(A | B) = P(A)$. По теореме умножения вероятностей
 
