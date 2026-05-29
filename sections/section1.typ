@@ -101,7 +101,7 @@ P3) Если ${A_i}_(i = 1)^infinity in cal(F), A_i inter A_j = emptyset space f
   $ P(A union B) = P(A) + P(B) - P(A inter B) $
 
   *Доказательство*: Запишем $C = A union B$ в виде суммы несовместных событий. Тогда
-  $ P(A union B) = P(A union.sq (B \\ (A inter B)) = P(A) + P( B \\ A inter B) =\
+  $ P(A union B) = P(A union.sq (B \\ (A inter B))) = P(A) + P( B \\ A inter B) =\
     =  P(A) + P(B) - P(A inter B) $
 + (Сравнение) \
   $ P (A union B) lt.eq P(A) + P(B) $
@@ -117,7 +117,7 @@ $ P (limits(union.big)_(i = 1)^n A _i) lt.eq limits(sum)^n_(i = 1) P(A_i) $
 
 Доказательство: Представим событие $A = limits(union.big)_(i = 1)^infinity A_i$ в виде суммы несовместных событий:
 
-$B_1 = A, space B_2 = A_2 \\ A_1, space ...$\
+$B_1 = A_1, space B_2 = A_2 \\ A_1, space ...$\
 $A = limits(union.sq.big)_(i = 1)^infinity B_i$
 
 Тогда применим аксиому $P 3$ ($P(limits(union.sq.big)_(i = 1)^infinity A_i) = limits(sum)_(i = 1)^infinity P(A_i)$):
