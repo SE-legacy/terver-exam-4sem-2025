@@ -236,7 +236,7 @@ $ P(A inter B) = P(A) dot P(B) $
 
 Случайные события $A_1, A_2, ..., A_n$ называются *независимыми в совокупности*, если $forall 2 <= k <= n$
 
-$ P(limits(inter.big)_(j = 1)^k A_(i j)) = limits(inter.sq.big)_(j = 1)^k P(A_(i j)) $
+$ P(limits(inter.big)_(j = 1)^k A_(i j)) = limits(product)_(j = 1)^k P(A_(i j)) $
 
 == Теорема о независимости противоположных событий. Критерий независимости случайных событий
 
