@@ -28,12 +28,12 @@
 == Определения: кольцо, алгебра, $sigma$-алгебра, минимальная $sigma$-алгебра над классом К, борелевская $sigma$-алгебра
 
 *Кольцом* над множеством $Omega$ называется класс подмножеств $Re$ такой, что:
-  + Если $A, B in Re => A union B in Re$
-  + Если $A, B in Re => A \\ B in Re$
++ Если $A, B in Re$, то $A union B in Re$
++ Если $A, B in Re$, то $A \\ B in Re$
 
 *Алгеброй* над множеством $Omega$ называется класс подмножеств $cal(A)$ такой, что
-  + Если $A in cal(A) => overline(A) in cal(A)$
-  + Если $A, B in cal(A) => A union B in cal(A)$
++ Если $A in cal(A)$, то $overline(A) in cal(A)$
++ Если $A, B in cal(A)$, то $A union B in cal(A)$
 
 *$sigma$-алгеброй событий* называется множество $cal(F)$ подмножеств $A subset Omega$, удовлетворяющее условиям:
 
