@@ -25,9 +25,9 @@ $ forall b in cal(B)(RR) space.quad f^(-1)(b) in S_mu (X), $
 
 _Необходимость:_ Пусть $f(x)$-измерима. Тогда по определению $(-infinity, c) in B(S_mu)$, т.к. $(-infinity, c)$ --- борелевское множество.
 
-_Достаточность:_ Пусть известно, что ${x: f(x) < c} = (-infinity, c) in S_mu$. Построим класс $Sigma = {(-infinity, c)}$ (из полуинтервала лучи из $RR$) замыкание этого класса.
+_Достаточность:_ Пусть известно, что ${x: f(x) < c} = (-infinity, c) in S_mu$. Построим класс $Sigma = {(-infinity, c)}$ (из полуинтервала лучи из $RR$)
 
-$B(Sigma)$ относительно операций $union, space inter space \\, space delta$ является борелевской $sigma$-алгеброй на прямой. По условию $(-infinity, c)$ --- $mu$-измеримо. Следовательно, $ f^(-1)(Sigma) subset S_mu $
+Замыкание этого класса $B(Sigma)$ относительно операций $union, space inter, space \\, space Delta$ является борелевской $sigma$-алгеброй на прямой. По условию $(-infinity, c)$ $mu$-измеримо. Следовательно, $ f^(-1)(Sigma) subset S_mu $
 
 Тогда $ f^(-1)(B(Sigma)) = B(f^(-1)(Sigma)) subset B(S_mu) = S_mu $
 
