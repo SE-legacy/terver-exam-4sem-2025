@@ -82,8 +82,13 @@ $ limits(lim)_(n->infinity) F_xi (x_n) = limits(lim)_(n -> infinity) P{xi in (- 
 
 Применяя этот метод к ${x_n}$ такой, что $x_n < x_(n + 1); space x_n -> infinity$ получаем свойство
 
-3) $ limits(lim)_(x -> infinity) F(x) = 1\
-"при" {x_n}", такой, что " {x_n} -> -infinity space limits(lim)_(x->infinity) F_xi (x) = 0 $
+3) ${limits(union.big)_(i = 1)^infinity A_i} = A = {omega : xi(omega) < infinity} = Omega$
+
+Пусть последовательность ${x_i}^infinity_(i = 1)$ такая, что $limits(lim)_(i -> infinity) x_i = infinity$. Тогда
+
+$ limits(lim)_(n -> infinity) F_xi (x_n) = P(Omega) = 1. $
+
+Для ${x_i}^infinity_(i = 1)$, $limits(lim)_(i -> infinity) x_i = -infinity$ аналогично.
 
 4) Полагая, что $x_1 = a, space x_2 = b$ получаем 
 $ F_xi (b) =  P{xi < a} + P{a <= xi < b)} = F_xi (a) + P{a <= xi < b)} \
