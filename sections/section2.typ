@@ -527,7 +527,7 @@ $ M xi = limits(integral)_(-infinity)^infinity x d F(x) $
 
   Пусть $xi$ --- неотрицательная случайная величина, а $g(x)$ --- неубывающая на множестве значений случайной величины $xi$ функция. Тогда $ forall epsilon > 0 space P{xi >= epsilon} <= (M g(xi)) / g(epsilon) $
 
-Доказательство:
+*Доказательство*:
 
 $ M g(xi) = limits(integral)_(-infinity)^infinity g(x) d F(x) >= limits(integral)_epsilon^infinity g(x) d F(x) underbrace(>=, g(x) space - "неубывающая") limits(integral)_epsilon^infinity g(epsilon) d F(x)= \ = underbrace(g(epsilon), "const") limits(integral)_epsilon^infinity d F(x) = g(epsilon) (F(x) bar.v_epsilon^(+infinity)) = g(epsilon) (limits(lim)_(x -> infinity) F(x) - F(epsilon)) = \ = g(epsilon) (1 - P{xi < epsilon}) = g(epsilon) P{xi >= epsilon} $
 
@@ -537,11 +537,11 @@ P{xi >= epsilon} <= (M g(xi)) / g(epsilon) $
 
 *Следствие (неравенство Чебышёва)*
 
-Пусть $xi$ --- сл.в. с м. о. $M xi < +infinity$. Тогда
-$ forall epsilon P{abs(xi - M xi) < epsilon} >= 1 - (cal(D) xi) / epsilon^2 $
+Пусть $xi$ --- сл.в., $M xi < +infinity$. Тогда
+$ forall epsilon > 0 space.quad P{abs(xi - M xi) < epsilon} >= 1 - (D xi) / epsilon^2 $
 или
-$ P{abs(xi - M xi) >= epsilon} <= (cal(D) xi) / epsilon^2 $
-где $cal(D) xi = M(xi - M xi)^2$
+$ P{abs(xi - M xi) >= epsilon} <= (D xi) / epsilon^2 $
+где $D xi = M(xi - M xi)^2$
 
 == Вычисление математического ожидания для распределений Бернулли, биномиального распределения, распределения Пуассона, равномерного непрерывного, показательного, нормального законов распределения
 === Мат. ожидание для распределений Бернулли
