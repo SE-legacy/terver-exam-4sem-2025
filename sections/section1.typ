@@ -221,12 +221,14 @@ $ P(A) = limits(sum)_(i = 1)^infinity P(A_i) dot P(A | A_i). $
 $ P(A_i | A) = (P(A_i) dot P(A | A_i))/(P(A)) $
 
 *Доказательство*:
-$
-	cases(
-		P(A inter A_i) = P(A_i) dot P(A | A_i),
-		P(A inter A_i) = P(A) dot P(A_i | A)
-	)
-$
+
+Так как $P(A_i) > 0$, $P(A) > 0$, то по теореме об умножении вероятностей, $P(A inter A_i) = P(A_i) dot P(A | A_i)$.
+
+$P(A inter A_i) = P(A) dot P(A_i | A)$.
+
+Следовательно, $P(A) dot P(A_i | A) = P(A_i) dot P(A | A_i)$, откуда
+
+$ P(A_i | A) = (P(A_i) dot P(A | A_i))/P(A), i = 1, 2, ... $
 
 == Независимость событий.  Независимость в совокупности
 
