@@ -20,9 +20,9 @@ $ forall b in cal(B)(RR) space.quad f^(-1)(b) in S_mu (X), $
 
 *Доказательство*:
 
-_Необходимость:_ Пусть $f(x)$ измерима. Тогда по определению $(-infinity, c) in cal(B)(S_mu)$, т.к. $(-infinity, c)$ --- борелевское множество.
+_Необходимость_: Пусть $f(x)$ измерима. Тогда по определению $(-infinity, c) in cal(B)(S_mu)$, т.к. $(-infinity, c)$ --- борелевское множество.
 
-_Достаточность:_ Пусть известно, что ${x: f(x) < c} = (-infinity, c) in S_mu$. Построим класс $Sigma = {(-infinity, c)}$ (из полуинтервала лучи из $RR$)
+_Достаточность_: Пусть известно, что ${x: f(x) < c} = (-infinity, c) in S_mu$. Построим класс $Sigma = {(-infinity, c)}$ (из полуинтервала лучи из $RR$)
 
 Замыкание этого класса $cal(B)(Sigma)$ относительно операций $union, space inter, space \\, space Delta$ является борелевской $sigma$-алгеброй на прямой. По условию $(-infinity, c)$ $mu$-измеримо. Следовательно, $ f^(-1)(Sigma) subset S_mu $
 
@@ -450,15 +450,15 @@ P{xi = x_i; eta = y_j} = P{xi = x_i} dot P{eta = y_j} $
 
 $ f_(xi eta) (x, y) = f_xi (x) dot f_eta (y) $
 
-*Доказательство*: 
+*Доказательство*:
 
-_Необходимость:_ Пусть сл.в. $xi, eta$ независимы, т.е. по определению $F_(xi eta) (x, y) = F_xi (x) dot F_eta (y)$. Тогда
+_Необходимость_: Пусть сл.в. $xi, eta$ независимы, т.е. по определению $F_(xi eta) (x, y) = F_xi (x) dot F_eta (y)$. Тогда
 
 $ underbrace((partial^2 F_(xi eta) (x, y)) / (partial x partial y), f_(xi eta) (x, y)) = (partial^2) / (partial x partial y) (F_xi (x) dot F_eta (y)) = underbrace( (partial F_xi (x)) / (partial x), f_xi (x)) dot underbrace( (partial F_eta (y)) / (partial y), f_eta (y)) $
 
 Таким образом $f_(xi eta) (x, y) = f_xi (x) dot f_eta (y)$
 
-_Достаточность:_ Пусть верно, что $f_(xi eta) (x, y) = f_xi (x) dot f_eta (y)$, тогда
+_Достаточность_: Пусть верно, что $f_(xi eta) (x, y) = f_xi (x) dot f_eta (y)$, тогда
 
 $ F_(xi eta) (x, y) = limits(integral)_(-infinity)^x limits(integral)_(-infinity)^y f(u, v) d u d v = limits(integral)_(-infinity)^x limits(integral)_(-infinity)^y f_xi (u) f_eta (v) d u d v = \ = limits(integral)_(-infinity)^x f_xi (u) d u limits(integral)_(-infinity)^y f_eta (v) d v = F_xi (x) F_eta (y) $
 
