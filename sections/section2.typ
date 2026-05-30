@@ -42,61 +42,69 @@ $B(Sigma)$ относительно операций $union, space inter space \
 
 == Функция распределения (ф.р.) и ее свойства
 
-Функцией распределения вероятностей случайной величины $xi$ называется функция $ F(x) = P{omega : xi(omega) < x} $
+Функцией распределения вероятностей случайной величины $xi$ называется функция $ F_xi (x) = P{omega : xi(omega) < x} $
 или другие формы записи:
 $F_xi (x) = P{xi < x}; space F_xi (x) = P{xi in (-infinity, x)}$
 
 *Свойства функции распределения:*
-+ $ 0 <= F_xi (x) <= 1 space forall x in RR$
-+ $F_xi (x)$ --- неубывающая, непрерывная слева функция. \ \
-+ $display(limits(lim)_(x -> +infinity) F_xi (x) = 1";" space limits(lim)_(x->-infinity) F_xi (x) = 0)$ \ \ 
-+ $P{a <= xi < b} = F_xi (b) - F_xi (a)$
-+ $P{xi = x_0} = F(x_0 + 0) - F(x_0)$
 
-Доказательства:
++ $ 0 <= F_xi (x) <= 1 space forall x in RR$.
 
-1) $0 <= F(x) <= 1$ --- очевидно в силу определения $ F(x) =  P{xi < x} space "и" space  0 <= P(A) <= 1 $
++ $F_xi (x)$ --- неубывающая, непрерывная слева функция.
 
-2) _Неубывающая:_  По определению требуется показать, что $ forall x_1 < x_2 space F(x_1) <= F(x_2) $
-  $ (-infinity; x_2) = underbrace((- infinity; x_1) union [x_1; x_2], "непересек.") $\
-  $ F(x_2) = P{xi in (- infinity, x_2)} = P{xi in (-infinity, x_1) union xi in [x_1, x_2)} \ = underbrace(P{xi in (- infinity, x_1)}, >=0) + underbrace(P{xi in \(x_1, x_2], >= 0)} >= P{xi in (-infinity, x_1)} = F(x_1) $\
-  Таким образом $F(x_2) >= F(x_1)$
++ $limits(lim)_(x -> +infinity) F_xi (x) = 1";" space limits(lim)_(x->-infinity) F_xi (x) = 0$.
 
-4) Полагая, что $x_1 = a, space x_2 = b$ получаем 
-  $ F(b) = F(a) + P{xi in [a, b]} \
-  P{xi in [a, b]} = P{a <= xi < b} = F(b) - F(a) $
++ $P{a <= xi < b} = F_xi (b) - F_xi (a)$.
+
++ $P{xi = x_0} = F_xi (x_0 + 0) - F_xi (x_0)$.
+
+*Доказательства*:
+
+1) $0 <= F_xi (x) <= 1$ --- очевидно в силу определения $ F_xi (x) =  P{xi < x} space "и" space  0 <= P(A) <= 1 $
+
+2) _Неубывающая:_  По определению требуется показать, что $ forall x_1 < x_2 space F_xi (x_1) <= F_xi (x_2) $
+$ (-infinity; x_2) = underbrace((- infinity; x_1) union [x_1; x_2), "непересек.") $\
+$ F_xi (x_2) = P{xi in (- infinity, x_2)} = P{xi in (-infinity, x_1) union xi in [x_1, x_2)} \ = underbrace(P{xi in (- infinity, x_1)}, >=0) + underbrace(P{xi in \[x_1, x_2), >= 0)} >= P{xi in (-infinity, x_1)} = F_xi (x_1) $\
+Таким образом $F(x_2) >= F(x_1)$
 
 _Непрерывная слева:_ Требуется показать, что для возрастающей последовательности ${x_n}$ такой, что $ x_1 < x_2 < ..., space limits(lim)_(n->infinity) x_n = x $
 
-последовательность $ F(x_n) limits(->)_(n->infinity) F(x) space "или" limits(lim)_(n->infinity) F(x_n) = F(x) $
+последовательность $ F_xi (x_n) limits(->)_(n->infinity) F(x) space "или" limits(lim)_(n->infinity) F_xi (x_n) = F_xi (x) $
 
-Рассмотрим последовательность событий $cal(A)_n = {omega : xi(omega) < x_n}$
+Рассмотрим последовательность событий $A_n = {omega : xi(omega) < x_n}$
 
-Имеем $ forall n cal(A)_n subset A_(n + 1) space (x_n < x_(n+1)) \ 
-limits(union.big)_(n = 1)^infinity cal(A)_n = cal(A) = (- infinity, x) "т.к." x_n -> x $ 
+Имеем $ forall n space A_n subset A_(n + 1) space (x_n < x_(n+1)) \ 
+limits(union.big)_(n = 1)^infinity A_n = A = (- infinity, x) "т.к." x_n -> x $ 
 
-Т.е. последовательность ${cal(A)_n}$ удовлетворяет свойству непрерывности вероятностной меры $P(limits(union.big)_(n = 1)^infinity) = limits(lim)_(n -> infinity) P(A_n)$. Тогда можем записать
+Т.е. последовательность ${A_n}$ удовлетворяет свойству непрерывности вероятностной меры $P(limits(union.big)_(n = 1)^infinity A_n) = limits(lim)_(n -> infinity) P(A_n)$. Тогда можем записать
 
-$ limits(lim)_(n->infinity) F(x_n) = limits(lim)_(n -> infinity) P{xi in (- infinity, x_n)} = P{limits(union.big)_(n = 1)^infinity xi in (- infinity, x_n)} = P{xi in (- infinity, x)} = F(x) $
+$ limits(lim)_(n->infinity) F_xi (x_n) = limits(lim)_(n -> infinity) P{xi in (- infinity, x_n)} = P{limits(union.big)_(n = 1)^infinity xi in (-infinity, x_n)} = P{xi in (-infinity, x)} = F_xi (x) $
 
-Применяя этот метод к ${x_n}$ такой, что $x_n < x_(n + 1); space x_n -> infinity$ получаем свойство 
+Применяя этот метод к ${x_n}$ такой, что $x_n < x_(n + 1); space x_n -> infinity$ получаем свойство
 
 3) $ limits(lim)_(x -> infinity) F(x) = 1\
-"при" {x_n}", такой, что " {x_n} -> -infinity space limits(lim)_(x->infinity) F(x) = 0 $
+"при" {x_n}", такой, что " {x_n} -> -infinity space limits(lim)_(x->infinity) F_xi (x) = 0 $
 
-5) $ F(x_0 + Delta x) = F(x_0) + P{x_0 <= xi < x + Delta x} $
+4) Полагая, что $x_1 = a, space x_2 = b$ получаем 
+$ F_xi (b) =  P{xi < a} + P{a <= xi < b)} = F_xi (a) + P{a <= xi < b)} \
+P{a <= xi < b} = F_xi (b) - F_xi (a) $
+
+5) $ F_xi (x_0 + Delta x) = F_xi (x_0) + P{x_0 <= xi < x + Delta x} $
 
 Пусть $Delta x -> 0$.
-$ underbrace(F(x_0 + 0), "т.к. F(x)" \ "непрерывна слева," \ "но не справа") - F(x_0) = P{xi = x_0} $
+$ underbrace(F_xi (x_0 + 0), "т.к. F(x)" \ "непрерывна слева," \ "но не справа") - F_xi (x_0) = P{xi = x_0} $
 
 
 == Теорема о существовании сл.в., соответствующей функции со свойствами ф.р.
 
 *Теорема о существовании случайной величины.*
 
-Пусть $F(x)$ --- неубывающая непрерывная слева функция, принимающая значения на отрезке $[0, 1]$. Тогда существует вероятностное пространство $(Omega, cal(F), P)$ и сл.в. $xi$ на нем, для которой $F(x)$ является функцией распределения, т.е
-$ P{xi < x} = F(x) $
+Пусть $F(x)$ --- неубывающая непрерывная слева функция, принимающая значения на отрезке $[0, 1]$. Тогда существует вероятностное пространство $(Omega, cal(F), P)$ и сл.в. $xi$ на нем, для которой $F(x)$ является функцией распределения, т.е.
+
+$ quad P{xi < x} = F(x) $
+
 Пусть $f(x)$ --- неотрицательная на $RR$ функция, такая, что $limits(integral)_(-infinity)^infinity f(x) d x = 1$. Тогда существует вероятностное пространство $(Omega, cal(F), P)$ и сл. в. $xi$ на нем, для которой $f(x)$ является функцией плотности распределения вероятности, т.е.
+
 $ P{xi < x} = limits(integral)_(-infinity)^x f(t) d t $
 
 
