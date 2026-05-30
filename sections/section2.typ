@@ -62,12 +62,14 @@ $F_xi (x) = P{xi < x}; space F_xi (x) = P{xi in (-infinity, x)}$
 
 1) $0 <= F_xi (x) <= 1$ --- очевидно в силу определения $ F_xi (x) =  P{xi < x} space "и" space  0 <= P(A) <= 1 $
 
-2) _Неубывающая:_  По определению требуется показать, что $ forall x_1 < x_2 space F_xi (x_1) <= F_xi (x_2) $
-$ (-infinity; x_2) = underbrace((- infinity; x_1) union [x_1; x_2), "непересек.") $\
-$ F_xi (x_2) = P{xi in (- infinity, x_2)} = P{xi in (-infinity, x_1) union xi in [x_1, x_2)} \ = underbrace(P{xi in (- infinity, x_1)}, >=0) + underbrace(P{xi in \[x_1, x_2), >= 0)} >= P{xi in (-infinity, x_1)} = F_xi (x_1) $\
+2) _Неубывающая_:  По определению требуется показать, что $ forall x_1 < x_2 space F_xi (x_1) <= F_xi (x_2) $
+$ (-infinity; x_2) = underbrace((- infinity; x_1) union [x_1; x_2), "непересек.") $
+
+$ F_xi (x_2) = P{xi in (- infinity, x_2)} = P{xi in (-infinity, x_1) union xi in [x_1, x_2)} \ = underbrace(P{xi in (- infinity, x_1)}, >=0) + underbrace(P{xi in \[x_1, x_2), >= 0)} >= P{xi in (-infinity, x_1)} = F_xi (x_1) $
+
 Таким образом $F(x_2) >= F(x_1)$
 
-_Непрерывная слева:_ Требуется показать, что для возрастающей последовательности ${x_n}$ такой, что $ x_1 < x_2 < ..., space limits(lim)_(n->infinity) x_n = x $
+_Непрерывная слева_: Требуется показать, что для возрастающей последовательности ${x_n}$ такой, что $ x_1 < x_2 < ..., space limits(lim)_(n->infinity) x_n = x $
 
 последовательность $ F_xi (x_n) limits(->)_(n->infinity) F(x) space "или" limits(lim)_(n->infinity) F_xi (x_n) = F_xi (x) $
 
