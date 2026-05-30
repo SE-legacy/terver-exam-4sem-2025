@@ -513,6 +513,10 @@ $ M xi = limits(integral)_(-infinity)^infinity x d F(x) $
   M xi eta = limits(sum)_(i = 1)^infinity limits(sum)_(j = 1)^infinity x_i y_j p_(i j) "для дискретных сл.в."\
   M xi eta = limits(integral)_(-infinity)^infinity limits(integral)_(-infinity)^infinity x y f(x, y) d x d y "для абс. непр. сл. в." $
 + Если $xi >= 0$, то $M xi >= 0$
++ *Неравенство Коши -- Буняковского*
+
+  $ abs(M xi eta)^2 <= M abs(xi)^2 M abs(eta)^2 \
+    (M xi eta <= sqrt(M xi^2) sqrt(M eta^2)) $
 + *Обобщённое неравенство Чебышёва*
 
   Пусть $xi$ --- неотрицательная случайная величина, а $g(x)$ --- неубывающая на множестве значений случайной величины $xi$ функция. Тогда $ forall epsilon > 0 space P{xi >= epsilon} <= (M g(xi)) / g(epsilon) $
