@@ -558,7 +558,7 @@ $ M epsilon^2 = 0 dot q + 1 dot p = p $
 Математическое ожидание сл. в. $xi$ равно
 
 $
-M xi = M (epsilon_1 + epsilon_2 + dots + epsilon_n) = M (epsilon_1) + M (epsilon_2) + dots + M (epsilon_n) = p + p + dots + p = n p
+  M xi = M (epsilon_1 + epsilon_2 + dots + epsilon_n) = M (epsilon_1) + M (epsilon_2) + dots + M (epsilon_n) = p + p + dots + p = n p
 $
 
 === Мат. ожидание для распределения Пуассона
@@ -566,12 +566,13 @@ $
 Математическое ожидание сл. в. $xi$ равно
 
 $
-M xi = limits(sum)_(k = 0)^infinity k (lambda e^(- lambda))/(k!) = lambda e^(- lambda) limits(sum)_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
+  M xi = sum_(k = 0)^infinity k (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
 $
 Математическое ожидание сл. в. $xi^2$ равно
 
 $
-M xi^2 = limits(sum)_(k = 0)^infinity k^2 (lambda e^(- lambda))/(k!) = lambda e^(- lambda) limits(sum)_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) limits(sum)_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = dots = lambda^2 + lambda.
+  M xi^2 = sum_(k = 0)^infinity k^2 (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) sum_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = \
+  = lambda e^(- lambda) (sum_(m = 0)^infinity m (lambda^m)/(m!) + sum_(m = 0)^infinity (lambda^m)/(m!)) = lambda e^(- lambda) (lambda e^lambda + e^lambda)  = lambda^2 + lambda.
 $
 
 === Мат. ожидание для равномерного непрерывного распределения
@@ -604,7 +605,7 @@ M xi^2 = limits(integral)_(0)^infinity x^2 dot lambda e^(- lambda x) d x = - x^2
 $
 
 === Мат. ожидание для нормального закона распределения
-Найдем характеристики стандартной нормальной случайной величины $xi_0 ~ N(0,1)$, а затем воспользуемся свойствами математического ожидания и дисперсии.
+Найдем характеристики стандартной нормальной случайной величины $xi_0 ~ N(0,1)$, а затем воспользуемся свойствами математического ожидания.
 
 Математическое ожидание сл. в. $xi_0$ равно
 
@@ -617,6 +618,7 @@ $
 $
 (=) - limits(integral)_(0)^(+infinity) e^(- t) d t + limits(integral)_(0)^(+infinity) e^(- t) d t = 0 
 $
+
 
 Математическое ожидание сл. в. $xi_0^2$ равно
 
@@ -635,6 +637,10 @@ $
 $
 
 Здесь использовался интеграл Пуассона, $limits(integral)_(-infinity)^infinity e^(- (x^2)/2) d x = sqrt(2 pi)$.
+
+Переходим к $xi ~ N(a, sigma^2)$ по свойству нормального распределения:
+
+$ M xi = M(sigma xi_0 + a) = sigma M xi_0 + M a = a. $
 
 == Числовые характеристики сл.величин: Начальные, центральные и смешанные  моменты. Дисперсия и ее свойства. Ковариация и её свойства. Коэффициент корреляции и его свойства
 === Моменты распределений
