@@ -773,6 +773,7 @@ $
 1. $abs(r) <= 1$
 
 	*Доказательство:*
+
 	$
 		abs(r) = abs("cov"(xi, eta))/(sqrt(D xi) sqrt(D eta)) = abs(M(xi - M xi) (eta - M eta))/(sqrt(D xi) sqrt(D eta)) <=\
 		<= (sqrt(M(xi - M xi)^2) sqrt(M(eta - M eta)^2))/(sqrt(D xi) sqrt(D eta)) = (sqrt(D xi) sqrt(D eta))/(sqrt(D xi) sqrt(D eta)) = 1
@@ -783,3 +784,17 @@ $
 	Следует из того, что у независимых сл. в. $"cov"(xi, eta) = 0$. Обратное неверно!!!
 
 3. Если $xi$ и $eta$ линейно связаны $(eta = a xi + b)$, то $abs(r) = 1$ и наоборот $abs(r) = 1$ означает, что между $xi$ и $eta$ существует линейная связь.
+	
+  *Доказательство:*
+  
+  $ M eta = M(a xi + b) = a M xi + b. $
+  $ D eta = D(a xi + b) = a^2 D xi. $
+  
+  $
+    "cov"(xi, eta) = M (xi - M xi)(eta - M eta) = M (xi - M xi) (a xi + b - a M xi - b) = \
+    M (a (xi - M xi)^2) = a D xi.
+  $
+  
+  $ r = (a D xi)/(sqrt(D xi) sqrt(a^2 D xi)) = (a D xi)/(abs(a) D xi) = a/abs(a) = plus.minus 1 $
+
+  Следовательно $abs(r) = 1$.
