@@ -210,7 +210,7 @@ $ P{xi = k} = (e^(-lambda) lambda^k) / (k!) $
 $ F_xi (x) = cases(
   0\, space &x <= 0,
   e^(-lambda)\, space &0 < x <= 1,
-  e^(-lambda) dot lambda\, space &1 < x <= 2,
+  e^(-lambda) + e^(-lambda) dot lambda\, space &1 < x <= 2,
   ...,
   limits(sum)_(k = 1)^x (e^(-lambda) lambda^k) / (k!)
 ) $
@@ -369,7 +369,7 @@ $ P{t <= xi < S | xi >= t} = P{t <= xi < s inter xi >= t} / P{xi >= t} = P{t <= 
 
 == Нормальное распределение (Гаусса), (ф.р., функции плотности, графики, свойства)
 
-$xi ~ N(a, sigma^2)$, $a$ --- среднее значение (мат. ожидание) величины, $sigma$ --- мера отклонения величины от среднего (дисперсия).
+$xi ~ N(a, sigma^2)$, $a$ --- среднее значение (мат. ожидание) величины, $sigma^2$ --- мера отклонения величины от среднего (дисперсия).
 
 Рассмотрим сл.в. $xi$ как ошибку при измерении некоторой неизвестной постоянной величины.
 
@@ -704,7 +704,7 @@ $
   $
     D(xi - eta) = M lr(((xi - eta) - M(xi - eta)), size: #125%)^2 = M lr(((xi - M xi) - (eta - M eta)), size: #125%)^2 = \
   = M lr(((xi - M xi)^2 - 2(xi - M xi) (eta - M eta) + (eta - M eta)^2), size: #125%) =\
-  = M (xi - M xi)^2 + M (eta - M eta)^2 - underbrace(M (xi - M xi) (eta - M eta), = 0 = (*)) = D xi + D eta.
+  = M (xi - M xi)^2 + M (eta - M eta)^2 - 2 underbrace(M (xi - M xi) (eta - M eta), = 0 = (*)) = D xi + D eta.
   $
   Докажем, что $(*) = 0$.
 
