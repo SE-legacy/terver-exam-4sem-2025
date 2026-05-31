@@ -770,11 +770,11 @@ $
 $
 
 *Свойства:*
-1. $|r| <= 1$
+1. $abs(r) <= 1$
 
 	*Доказательство:*
 	$
-		|r| = (|"cov"(xi, eta)|)/(sqrt(D xi) sqrt(D eta)) = (|M xi eta - M xi M eta|)/(sqrt(D xi) sqrt(D eta)) <=\
+		abs(r) = abs("cov"(xi, eta))/(sqrt(D xi) sqrt(D eta)) = abs(M(xi - M xi) (eta - M eta))/(sqrt(D xi) sqrt(D eta)) <=\
 		<= (sqrt(M(xi - M xi)^2) sqrt(M(eta - M eta)^2))/(sqrt(D xi) sqrt(D eta)) = (sqrt(D xi) sqrt(D eta))/(sqrt(D xi) sqrt(D eta)) = 1
 	$
 
@@ -782,4 +782,4 @@ $
 
 	Следует из того, что у независимых сл. в. $"cov"(xi, eta) = 0$. Обратное неверно!!!
 
-3. Если $xi$ и $eta$ линейно связаны $(eta = a xi + b)$, то $|r| = 1$ и наоборот $|r| = 1$ означает, что между $xi$ и $eta$ существует линейная связь.
+3. Если $xi$ и $eta$ линейно связаны $(eta = a xi + b)$, то $abs(r) = 1$ и наоборот $abs(r) = 1$ означает, что между $xi$ и $eta$ существует линейная связь.
