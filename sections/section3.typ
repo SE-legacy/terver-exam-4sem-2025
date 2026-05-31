@@ -133,12 +133,12 @@ $
 Тогда $F(x) eq.triple G(x)$ в смысле $P{omega: F(x) eq.not G(x)} = 0$
 
 == Теорема Бохнера-Хинчина.
-Пусть $phi xi (t), space t in RR$, такая что $phi xi (0) = 1$.
+Пусть $phi_xi (t), space t in RR$, такая что $phi_xi (0) = 1$.
 
-Для того, чтобы функция $phi xi (t)$ являлась х.ф. необходимо и достаточно, чтобы $forall t_1, dots, t_n in RR$, $lambda_1, dots, lambda_n in CC$
+Для того, чтобы функция $phi_xi (t)$ являлась х.ф. необходимо и достаточно, чтобы $forall t_1, dots, t_n in RR$, $lambda_1, dots, lambda_n in CC$
 
 $
-limits(sum)_(i, j = 1)^n phi xi (t_i - t_j) lambda_i overline(lambda_j) >= 0.
+limits(sum)_(i, j = 1)^n phi_xi (t_i - t_j) lambda_i overline(lambda_j) >= 0.
 $
 
 == Теорема непрерывности.(Теорема Леви)
