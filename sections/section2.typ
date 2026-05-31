@@ -565,12 +565,12 @@ $
 Математическое ожидание сл. в. $xi$ равно
 
 $
-  M xi = sum_(k = 0)^infinity k (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
+  M xi = sum_(k = 0)^infinity k (lambda^k e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
 $
 Математическое ожидание сл. в. $xi^2$ равно
 
 $
-  M xi^2 = sum_(k = 0)^infinity k^2 (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) sum_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = \
+  M xi^2 = sum_(k = 0)^infinity k^2 (lambda^k  e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) sum_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = \
   = lambda e^(- lambda) (sum_(m = 0)^infinity m (lambda^m)/(m!) + sum_(m = 0)^infinity (lambda^m)/(m!)) = lambda e^(- lambda) (lambda e^lambda + e^lambda)  = lambda^2 + lambda.
 $
 
