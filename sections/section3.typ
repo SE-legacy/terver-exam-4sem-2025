@@ -127,7 +127,7 @@ $
 == Теорема единственности.
 Пусть $F(x)$ и $G(x)$ --- функции распределения с одной и той же х.ф. $phi(t)$, т.е.
 $
-phi(t) = limits(integral)_(-infinity)^infinity abs(x) d F(x), space space phi(t) = limits(integral)_(-infinity)^infinity abs(x) d G(x)
+phi(t) = limits(integral)_(-infinity)^infinity e^(i t x) d F(x), space space phi(t) = limits(integral)_(-infinity)^infinity e^(i t x) d G(x)
 $
 
 Тогда $F(x) eq.triple G(x)$ в смысле $P{omega: F(x) eq.not G(x)} = 0$
