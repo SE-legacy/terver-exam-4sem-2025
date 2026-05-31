@@ -55,9 +55,9 @@ $
 5. Если $xi_1, dots, xi_n$ --- независимые сл.в., то х.ф. их суммы
 	$ xi = xi_1 + dots + xi_n $
 	имеет вид:
-	$ phi xi (t) = limits(inter.sq.big)_(i = 1)^n phi (xi_i) (t) $
-6. Если $eta = a xi + b$ и $phi xi (t)$ х.ф. сл. в. $xi$, то
-	$ phi xi (t) = e^(i t b) phi xi (t a) $
+	$ phi_xi (t) = product_(i = 1)^n phi (xi_i) (t) $
+6. Если $eta = a xi + b$ и $phi_xi (t)$ х.ф. сл. в. $xi$, то
+	$ phi_xi (t) = e^(i t b) phi xi (t a) $
 
 == Доказательство свойства "Равномерная непрерывность характеристической функции" 
 
