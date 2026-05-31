@@ -40,17 +40,17 @@ $
 
 Т.к.
 $
-M |e^(i t xi)| = limits(integral)_(-infinity)^infinity |e^(i t xi)| d F_xi (x) = 1
+M abs(e^(i t xi)) = limits(integral)_(-infinity)^infinity abs(e^(i t xi)) d F_xi (x) = 1
 $
 
 То $M e^(i t xi) < + infinity$, и следовательно х.ф. существует.
 
 == Свойства характеристической функции (формулировки)
 
-1. $phi(0) = 1, space |phi(t)| <= 1 space forall t in RR$
+1. $phi(0) = 1, space abs(phi(t)) <= 1 space forall t in RR$
 2. $phi(- t) = overline(phi(t))$
 3. Х.ф --- равномерно непрерывна на $forall t in RR$
-4. Если существует $M |xi^n| < infinity$, то $phi(t)$ имеет $n$ непрерывных первых производных и
+4. Если существует $M abs(xi^n) < infinity$, то $phi(t)$ имеет $n$ непрерывных первых производных и
 	$ phi^((n))(t) = i^n M xi^n . $
 5. Если $xi_1, dots, xi_n$ --- независимые сл.в., то х.ф. их суммы
 	$ xi = xi_1 + dots + xi_n $
@@ -68,53 +68,53 @@ $
 По определению требуется показать, что
 
 $
-forall epsilon > 0 space exists delta (epsilon) > 0 space #[такое что] forall |t_1 - t_2| < delta
+forall epsilon > 0 space exists delta (epsilon) > 0 space #[такое что] forall abs(t_1 - t_2) < delta
 $
 
 $
-| phi(t_1) - phi(t_2) | < epsilon
+abs(phi(t_1) - phi(t_2)) < epsilon
 $
 
 Рассмотрим
 
 $
-| phi(t_1) - phi(t_2) | = | limits(integral)_(-infinity)^infinity (e^(i t_1 x) - e^(i t_2 x)) d F_xi (x) | <=\
-<= limits(integral)_(-infinity)^infinity |e^(i t_1 x) - e^(i t_2 x)| d F_xi (x) = limits(integral)_(-infinity)^infinity |e^(i t_2 x)| dot |e^(i(t_1 - t_2) x) - 1| d F_xi (x) <=\
-<= limits(integral)_(|x| <= A) | e^(i (t_1 - t_2) x) - 1 | d F_xi (x) + 2 limits(integral)_(|x| > A) d F_xi (x) = I_1 + I_2
+abs(phi(t_1) - phi(t_2)) = abs(limits(integral)_(-infinity)^infinity (e^(i t_1 x) - e^(i t_2 x)) d F_xi (x)) <=\
+<= limits(integral)_(-infinity)^infinity abs(e^(i t_1 x) - e^(i t_2 x)) d F_xi (x) = limits(integral)_(-infinity)^infinity abs(e^(i t_2 x)) dot abs(e^(i(t_1 - t_2) x) - 1) d F_xi (x) <=\
+<= limits(integral)_(abs(x) <= A) abs(e^(i (t_1 - t_2) x) - 1) d F_xi (x) + 2 limits(integral)_(abs(x) > A) d F_xi (x) = I_1 + I_2
 $
 
 Для заданного $epsilon > 0$ выберем достаточно большое $A$, такое чтобы
 
 $
-limits(integral)_(|x| > A) d F_xi (x) = P{|x| <= A} < epsilon/4
+limits(integral)_(abs(x) > A) d F_xi (x) = P{abs(x) <= A} < epsilon/4
 $
 
-Фиксируем найденное $A$, воспользуемся равномерной непрерывностью функции $e^(i (t_1 - t_2) x)$ на ограниченном множестве $|x| <= A$, и выберем такое $delta = delta(epsilon)$, что
+Фиксируем найденное $A$, воспользуемся равномерной непрерывностью функции $e^(i (t_1 - t_2) x)$ на ограниченном множестве $abs(x) <= A$, и выберем такое $delta = delta(epsilon)$, что
 $
-| e^(i (t_1 - t_2) x) - 1 | < epsilon/2 space #[ при] |t_1 - t_2| < delta
+abs(e^(i (t_1 - t_2) x) - 1) < epsilon/2 space #[ при] abs(t_1 - t_2) < delta
 $
 
 Тогда имеем
 
 $
-| phi(t_1) - phi(t_2) | <= epsilon/2 P{|x| <= A} + epsilon/2 <= epsilon
+abs(phi(t_1) - phi(t_2)) <= epsilon/2 P{abs(x) <= A} + epsilon/2 <= epsilon
 $
 
 Таким образом, $phi(t)$ равномерно непрерывна.
 
 == Доказательство свойства "Существование производных и Вычисление моментов с использованием характеристической функции"
-Если существует $M |xi^n| < infinity$, то $phi(t)$ имеет $n$ непрерывных первых производных и
+Если существует $M abs(xi^n) < infinity$, то $phi(t)$ имеет $n$ непрерывных первых производных и
 $ phi^((n))(t) = i^n M xi^n . $
 
 *Доказательство:*
 
 Доказательство проводится по индукции. Пусть $n = 1$.
 
-По условию теоремы $M|xi| = limits(integral)_(-infinity)^infinity |x| d F (x) < infinity$.
+По условию теоремы $M abs(xi) = limits(integral)_(-infinity)^infinity abs(x) d F (x) < infinity$.
 
 Рассмотрим формальную производную х.ф. $phi'(t) = limits(integral) i x e^(i t x) d F (x)$.
 
-Теорема о дифференицровании под знаком интеграла требует, чтобы интеграл сходися равномерно. Это требование выполнено, в силу того, что $|e^(i t x)|$ ограничена, а $integral i x e^(i t x) d F(x)$ конечен по условию. Таким образом, дифференцирование возможно, и следовательно:
+Теорема о дифференицровании под знаком интеграла требует, чтобы интеграл сходися равномерно. Это требование выполнено, в силу того, что $abs(e^(i t x))$ ограничена, а $integral i x e^(i t x) d F(x)$ конечен по условию. Таким образом, дифференцирование возможно, и следовательно:
 
 $
 phi'(t) = i integral x e^(i t x) d F(x),
@@ -127,7 +127,7 @@ $
 == Теорема единственности.
 Пусть $F(x)$ и $G(x)$ --- функции распределения с одной и той же х.ф. $phi(t)$, т.е.
 $
-phi(t) = limits(integral)_(-infinity)^infinity |x| d F(x), space space phi(t) = limits(integral)_(-infinity)^infinity |x| d G(x)
+phi(t) = limits(integral)_(-infinity)^infinity abs(x) d F(x), space space phi(t) = limits(integral)_(-infinity)^infinity abs(x) d G(x)
 $
 
 Тогда $F(x) eq.triple G(x)$ в смысле $P{omega: F(x) eq.not G(x)} = 0$
