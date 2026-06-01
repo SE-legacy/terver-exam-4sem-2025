@@ -565,12 +565,12 @@ $
 Математическое ожидание сл. в. $xi$ равно
 
 $
-  M xi = sum_(k = 0)^infinity k (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
+  M xi = sum_(k = 0)^infinity k (lambda^k e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) e^(lambda) = lambda
 $
 Математическое ожидание сл. в. $xi^2$ равно
 
 $
-  M xi^2 = sum_(k = 0)^infinity k^2 (lambda e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) sum_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = \
+  M xi^2 = sum_(k = 0)^infinity k^2 (lambda^k  e^(- lambda))/(k!) = lambda e^(- lambda) sum_(k = 0)^infinity k (lambda^(k - 1))/((k - 1)!) = lambda e^(- lambda) sum_(m = 0)^infinity (m + 1) (lambda^m)/(m!) = \
   = lambda e^(- lambda) (sum_(m = 0)^infinity m (lambda^m)/(m!) + sum_(m = 0)^infinity (lambda^m)/(m!)) = lambda e^(- lambda) (lambda e^lambda + e^lambda)  = lambda^2 + lambda.
 $
 
@@ -770,11 +770,12 @@ $
 $
 
 *Свойства:*
-1. $|r| <= 1$
+1. $abs(r) <= 1$
 
 	*Доказательство:*
+
 	$
-		|r| = (|"cov"(xi, eta)|)/(sqrt(D xi) sqrt(D eta)) = (|M xi eta - M xi M eta|)/(sqrt(D xi) sqrt(D eta)) <=\
+		abs(r) = abs("cov"(xi, eta))/(sqrt(D xi) sqrt(D eta)) = abs(M(xi - M xi) (eta - M eta))/(sqrt(D xi) sqrt(D eta)) <=\
 		<= (sqrt(M(xi - M xi)^2) sqrt(M(eta - M eta)^2))/(sqrt(D xi) sqrt(D eta)) = (sqrt(D xi) sqrt(D eta))/(sqrt(D xi) sqrt(D eta)) = 1
 	$
 
@@ -782,4 +783,18 @@ $
 
 	Следует из того, что у независимых сл. в. $"cov"(xi, eta) = 0$. Обратное неверно!!!
 
-3. Если $xi$ и $eta$ линейно связаны $(eta = a xi + b)$, то $|r| = 1$ и наоборот $|r| = 1$ означает, что между $xi$ и $eta$ существует линейная связь.
+3. Если $xi$ и $eta$ линейно связаны $(eta = a xi + b)$, то $abs(r) = 1$ и наоборот $abs(r) = 1$ означает, что между $xi$ и $eta$ существует линейная связь.
+	
+  *Доказательство:*
+  
+  $ M eta = M(a xi + b) = a M xi + b. $
+  $ D eta = D(a xi + b) = a^2 D xi. $
+  
+  $
+    "cov"(xi, eta) = M (xi - M xi)(eta - M eta) = M (xi - M xi) (a xi + b - a M xi - b) = \
+    M (a (xi - M xi)^2) = a D xi.
+  $
+  
+  $ r = (a D xi)/(sqrt(D xi) sqrt(a^2 D xi)) = (a D xi)/(abs(a) D xi) = a/abs(a) = plus.minus 1 $
+
+  Следовательно $abs(r) = 1$.
